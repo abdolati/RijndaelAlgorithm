@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace RijndaelAlgorithm
 {
-    public partial class Form1 : Form
+    public partial class RijndaelAlgorithm : Form
     {
         private byte[] originalFileData;
         private byte[] encryptedFileData;
@@ -21,7 +21,7 @@ namespace RijndaelAlgorithm
         private byte[] encryptionKey;
         private byte[] encryptionIV;
 
-        public Form1()
+        public RijndaelAlgorithm()
         {
             InitializeComponent();
         }
@@ -73,7 +73,7 @@ namespace RijndaelAlgorithm
 
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
-                Filter = "Encrypted files (.enc)|.enc"
+                Filter = "Encrypted files (.Reg)|.Reg"
             };
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
@@ -85,8 +85,7 @@ namespace RijndaelAlgorithm
 
             TimeSpan stopTime = DateTime.Now.Subtract(start);
             elapsedTime += stopTime;
-            TxtEncryptTime.Text = elapsedTime.ToString();
-            //MessageBox.Show("File encryption complete. Time taken: " + elapsedTime.ToString());
+            TxtEncryptTime.Text = elapsedTime.ToString();          
         }
 
         private void btndecrypt_Click(object sender, EventArgs e)
@@ -132,8 +131,20 @@ namespace RijndaelAlgorithm
             TimeSpan stopTime = DateTime.Now.Subtract(start);
             elapsedTime += stopTime;
             TxtDecryptedFileTime.Text = elapsedTime.ToString();
+        }
 
-            //MessageBox.Show("File decryption complete. Time taken: " + elapsedTime.ToString());
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            TxPathFile.Clear();
+            TxtDecryptedFileTime.Clear();
+            TxtPathfilEncrypt.Clear();
+            TxtEncryptTime.Clear();
+            TxtPathFileDecrypte.Clear();        
         }
     }
 }

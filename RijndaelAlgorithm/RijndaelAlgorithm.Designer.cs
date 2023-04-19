@@ -1,6 +1,6 @@
 ﻿namespace RijndaelAlgorithm
 {
-    partial class Form1
+    partial class RijndaelAlgorithm
     {
         /// <summary>
         /// Required designer variable.
@@ -41,60 +41,66 @@
             this.TxtEncryptTime = new System.Windows.Forms.TextBox();
             this.btnencrypt = new System.Windows.Forms.Button();
             this.btnimportFile = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 362);
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(15, 363);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 13);
+            this.label5.Size = new System.Drawing.Size(108, 16);
             this.label5.TabIndex = 39;
             this.label5.Text = "DecryptPathFile";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 230);
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(15, 248);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.Size = new System.Drawing.Size(107, 16);
             this.label4.TabIndex = 38;
             this.label4.Text = "EncryptPathFile";
             // 
             // TxtPathFileDecrypte
             // 
             this.TxtPathFileDecrypte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPathFileDecrypte.Location = new System.Drawing.Point(172, 352);
+            this.TxtPathFileDecrypte.Location = new System.Drawing.Point(136, 348);
             this.TxtPathFileDecrypte.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPathFileDecrypte.Name = "TxtPathFileDecrypte";
-            this.TxtPathFileDecrypte.Size = new System.Drawing.Size(578, 31);
+            this.TxtPathFileDecrypte.Size = new System.Drawing.Size(614, 31);
             this.TxtPathFileDecrypte.TabIndex = 37;
             // 
             // TxtPathfilEncrypt
             // 
             this.TxtPathfilEncrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPathfilEncrypt.Location = new System.Drawing.Point(172, 221);
+            this.TxtPathfilEncrypt.Location = new System.Drawing.Point(136, 233);
             this.TxtPathfilEncrypt.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPathfilEncrypt.Name = "TxtPathfilEncrypt";
-            this.TxtPathfilEncrypt.Size = new System.Drawing.Size(578, 31);
+            this.TxtPathfilEncrypt.Size = new System.Drawing.Size(614, 31);
             this.TxtPathfilEncrypt.TabIndex = 36;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 120);
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(15, 127);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(60, 16);
             this.label3.TabIndex = 35;
             this.label3.Text = "PathFile";
             // 
             // TxPathFile
             // 
             this.TxPathFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxPathFile.Location = new System.Drawing.Point(136, 110);
+            this.TxPathFile.Location = new System.Drawing.Point(136, 115);
             this.TxPathFile.Margin = new System.Windows.Forms.Padding(4);
             this.TxPathFile.Name = "TxPathFile";
             this.TxPathFile.Size = new System.Drawing.Size(614, 31);
@@ -103,79 +109,128 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 197);
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 209);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
+            this.label2.Size = new System.Drawing.Size(86, 16);
             this.label2.TabIndex = 33;
             this.label2.Text = "EncryptTime";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 323);
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 324);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(87, 16);
             this.label1.TabIndex = 32;
             this.label1.Text = "DecryptTime";
             // 
             // btndecrypt
             // 
-            this.btndecrypt.Location = new System.Drawing.Point(758, 353);
+            this.btndecrypt.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btndecrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndecrypt.Location = new System.Drawing.Point(647, 305);
             this.btndecrypt.Margin = new System.Windows.Forms.Padding(4);
             this.btndecrypt.Name = "btndecrypt";
             this.btndecrypt.Size = new System.Drawing.Size(103, 35);
             this.btndecrypt.TabIndex = 31;
             this.btndecrypt.Text = "Decrypt";
-            this.btndecrypt.UseVisualStyleBackColor = true;
+            this.btndecrypt.UseVisualStyleBackColor = false;
             this.btndecrypt.Click += new System.EventHandler(this.btndecrypt_Click);
             // 
             // TxtDecryptedFileTime
             // 
             this.TxtDecryptedFileTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDecryptedFileTime.Location = new System.Drawing.Point(172, 313);
+            this.TxtDecryptedFileTime.Location = new System.Drawing.Point(136, 309);
             this.TxtDecryptedFileTime.Margin = new System.Windows.Forms.Padding(4);
             this.TxtDecryptedFileTime.Name = "TxtDecryptedFileTime";
-            this.TxtDecryptedFileTime.Size = new System.Drawing.Size(215, 31);
+            this.TxtDecryptedFileTime.Size = new System.Drawing.Size(503, 31);
             this.TxtDecryptedFileTime.TabIndex = 30;
             // 
             // TxtEncryptTime
             // 
             this.TxtEncryptTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEncryptTime.Location = new System.Drawing.Point(172, 182);
+            this.TxtEncryptTime.Location = new System.Drawing.Point(136, 194);
             this.TxtEncryptTime.Margin = new System.Windows.Forms.Padding(4);
             this.TxtEncryptTime.Name = "TxtEncryptTime";
-            this.TxtEncryptTime.Size = new System.Drawing.Size(215, 31);
+            this.TxtEncryptTime.Size = new System.Drawing.Size(503, 31);
             this.TxtEncryptTime.TabIndex = 29;
             // 
             // btnencrypt
             // 
-            this.btnencrypt.Location = new System.Drawing.Point(758, 218);
+            this.btnencrypt.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnencrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnencrypt.Location = new System.Drawing.Point(647, 194);
             this.btnencrypt.Margin = new System.Windows.Forms.Padding(4);
             this.btnencrypt.Name = "btnencrypt";
             this.btnencrypt.Size = new System.Drawing.Size(103, 34);
             this.btnencrypt.TabIndex = 28;
             this.btnencrypt.Text = "Encrypt";
-            this.btnencrypt.UseVisualStyleBackColor = true;
+            this.btnencrypt.UseVisualStyleBackColor = false;
             this.btnencrypt.Click += new System.EventHandler(this.btnencrypt_Click);
             // 
             // btnimportFile
             // 
-            this.btnimportFile.Location = new System.Drawing.Point(758, 110);
+            this.btnimportFile.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnimportFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnimportFile.Location = new System.Drawing.Point(136, 76);
             this.btnimportFile.Margin = new System.Windows.Forms.Padding(4);
             this.btnimportFile.Name = "btnimportFile";
             this.btnimportFile.Size = new System.Drawing.Size(103, 31);
             this.btnimportFile.TabIndex = 27;
             this.btnimportFile.Text = " ImportFile";
-            this.btnimportFile.UseVisualStyleBackColor = true;
+            this.btnimportFile.UseVisualStyleBackColor = false;
             this.btnimportFile.Click += new System.EventHandler(this.btnimportFile_Click);
             // 
-            // Form1
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(12, 460);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(103, 35);
+            this.btnExit.TabIndex = 40;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(123, 460);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(103, 35);
+            this.btnClear.TabIndex = 41;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label6.Font = new System.Drawing.Font("Sitka Heading", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(317, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(184, 30);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "RijndaelAlgorithm";
+            // 
+            // RijndaelAlgorithm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 499);
+            this.ClientSize = new System.Drawing.Size(823, 499);
+            this.ControlBox = false;
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TxtPathFileDecrypte);
@@ -189,8 +244,9 @@
             this.Controls.Add(this.TxtEncryptTime);
             this.Controls.Add(this.btnencrypt);
             this.Controls.Add(this.btnimportFile);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "RijndaelAlgorithm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "RijndaelAlgorithm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,6 +267,9 @@
         private System.Windows.Forms.TextBox TxtEncryptTime;
         private System.Windows.Forms.Button btnencrypt;
         private System.Windows.Forms.Button btnimportFile;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label label6;
     }
 }
 
