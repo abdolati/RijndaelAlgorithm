@@ -189,7 +189,7 @@
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(12, 460);
+            this.btnExit.Location = new System.Drawing.Point(136, 462);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(103, 35);
@@ -202,12 +202,12 @@
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(123, 460);
+            this.btnClear.Location = new System.Drawing.Point(13, 462);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(103, 35);
             this.btnClear.TabIndex = 41;
-            this.btnClear.Text = "Clear";
+            this.btnClear.Text = "New";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -215,10 +215,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label6.Font = new System.Drawing.Font("Sitka Heading", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Sitka Heading", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(317, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(184, 30);
+            this.label6.Size = new System.Drawing.Size(238, 39);
             this.label6.TabIndex = 42;
             this.label6.Text = "RijndaelAlgorithm";
             // 
