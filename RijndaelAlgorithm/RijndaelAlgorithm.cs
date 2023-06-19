@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace RijndaelAlgorithm
         {
             InitializeComponent();
         }
+        Stopwatch stopwatch = new Stopwatch();
 
         private void btnimportFile_Click(object sender, EventArgs e)
         {
@@ -44,15 +46,15 @@ namespace RijndaelAlgorithm
 
         private void btnencrypt_Click(object sender, EventArgs e)
         {
-            TimeSpan elapsedTime = TimeSpan.Zero;
-            DateTime start = DateTime.Now;
+            //TimeSpan elapsedTime = TimeSpan.Zero;
+            //DateTime start = DateTime.Now;
 
             if (originalFileData == null)
             {
                 MessageBox.Show("Please import a file first.");
                 return;
             }
-
+            stopwatch.Start();
             RijndaelManaged rijndael = new RijndaelManaged();
             rijndael.GenerateKey();
             rijndael.GenerateIV();
@@ -71,6 +73,8 @@ namespace RijndaelAlgorithm
                     encryptedFileData = msEncrypt.ToArray();
                 }
             }
+           
+            stopwatch.Stop();
 
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
@@ -84,15 +88,18 @@ namespace RijndaelAlgorithm
                 TxtPathfilEncrypt.Text = fileName;
             }
 
-            TimeSpan stopTime = DateTime.Now.Subtract(start);
-            elapsedTime += stopTime;
-            TxtEncryptTime.Text = elapsedTime.ToString();          
+            //TimeSpan stopTime = DateTime.Now.Subtract(start);
+            //elapsedTime += stopTime;
+           
+
+            TxtEncryptTime.Text =$" {stopwatch.Elapsed.TotalSeconds}";
+                //elapsedTime.ToString();          
         }
 
         private void btndecrypt_Click(object sender, EventArgs e)
         {
-            TimeSpan elapsedTime = TimeSpan.Zero;
-            DateTime start = DateTime.Now;
+            //TimeSpan elapsedTime = TimeSpan.Zero;
+            //DateTime start = DateTime.Now;
 
 
             if (encryptedFileData == null || encryptionKey == null || encryptionIV == null)
@@ -101,6 +108,7 @@ namespace RijndaelAlgorithm
                 return;
             }
 
+          
             RijndaelManaged rijndael = new RijndaelManaged();
             rijndael.Key = encryptionKey;
             rijndael.IV = encryptionIV;
@@ -116,7 +124,7 @@ namespace RijndaelAlgorithm
                     decryptedFileData = msDecrypt.ToArray();
                 }
             }
-
+            stopwatch.Stop();
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
                 Filter = "Original File Extension |" + Path.GetExtension(TxPathFile.Text)
@@ -129,9 +137,9 @@ namespace RijndaelAlgorithm
                 TxtPathFileDecrypte.Text = fileName;
             }
 
-            TimeSpan stopTime = DateTime.Now.Subtract(start);
-            elapsedTime += stopTime;
-            TxtDecryptedFileTime.Text = elapsedTime.ToString();
+
+            TxtDecryptedFileTime.Text = $" {stopwatch.Elapsed.TotalSeconds}";
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
