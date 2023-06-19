@@ -74,7 +74,7 @@
             this.TxtPathFileDecrypte.Location = new System.Drawing.Point(136, 348);
             this.TxtPathFileDecrypte.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPathFileDecrypte.Name = "TxtPathFileDecrypte";
-            this.TxtPathFileDecrypte.Size = new System.Drawing.Size(614, 31);
+            this.TxtPathFileDecrypte.Size = new System.Drawing.Size(503, 31);
             this.TxtPathFileDecrypte.TabIndex = 37;
             // 
             // TxtPathfilEncrypt
@@ -83,7 +83,7 @@
             this.TxtPathfilEncrypt.Location = new System.Drawing.Point(136, 233);
             this.TxtPathfilEncrypt.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPathfilEncrypt.Name = "TxtPathfilEncrypt";
-            this.TxtPathfilEncrypt.Size = new System.Drawing.Size(614, 31);
+            this.TxtPathfilEncrypt.Size = new System.Drawing.Size(503, 31);
             this.TxtPathfilEncrypt.TabIndex = 36;
             // 
             // label3
@@ -103,7 +103,7 @@
             this.TxPathFile.Location = new System.Drawing.Point(136, 115);
             this.TxPathFile.Margin = new System.Windows.Forms.Padding(4);
             this.TxPathFile.Name = "TxPathFile";
-            this.TxPathFile.Size = new System.Drawing.Size(614, 31);
+            this.TxPathFile.Size = new System.Drawing.Size(503, 31);
             this.TxPathFile.TabIndex = 34;
             // 
             // label2
@@ -132,10 +132,10 @@
             // 
             this.btndecrypt.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btndecrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndecrypt.Location = new System.Drawing.Point(647, 305);
+            this.btndecrypt.Location = new System.Drawing.Point(526, 305);
             this.btndecrypt.Margin = new System.Windows.Forms.Padding(4);
             this.btndecrypt.Name = "btndecrypt";
-            this.btndecrypt.Size = new System.Drawing.Size(103, 35);
+            this.btndecrypt.Size = new System.Drawing.Size(113, 35);
             this.btndecrypt.TabIndex = 31;
             this.btndecrypt.Text = "Decrypt";
             this.btndecrypt.UseVisualStyleBackColor = false;
@@ -147,7 +147,7 @@
             this.TxtDecryptedFileTime.Location = new System.Drawing.Point(136, 309);
             this.TxtDecryptedFileTime.Margin = new System.Windows.Forms.Padding(4);
             this.TxtDecryptedFileTime.Name = "TxtDecryptedFileTime";
-            this.TxtDecryptedFileTime.Size = new System.Drawing.Size(503, 31);
+            this.TxtDecryptedFileTime.Size = new System.Drawing.Size(382, 31);
             this.TxtDecryptedFileTime.TabIndex = 30;
             // 
             // TxtEncryptTime
@@ -156,17 +156,17 @@
             this.TxtEncryptTime.Location = new System.Drawing.Point(136, 194);
             this.TxtEncryptTime.Margin = new System.Windows.Forms.Padding(4);
             this.TxtEncryptTime.Name = "TxtEncryptTime";
-            this.TxtEncryptTime.Size = new System.Drawing.Size(503, 31);
+            this.TxtEncryptTime.Size = new System.Drawing.Size(382, 31);
             this.TxtEncryptTime.TabIndex = 29;
             // 
             // btnencrypt
             // 
             this.btnencrypt.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnencrypt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnencrypt.Location = new System.Drawing.Point(647, 194);
+            this.btnencrypt.Location = new System.Drawing.Point(526, 191);
             this.btnencrypt.Margin = new System.Windows.Forms.Padding(4);
             this.btnencrypt.Name = "btnencrypt";
-            this.btnencrypt.Size = new System.Drawing.Size(103, 34);
+            this.btnencrypt.Size = new System.Drawing.Size(113, 34);
             this.btnencrypt.TabIndex = 28;
             this.btnencrypt.Text = "Encrypt";
             this.btnencrypt.UseVisualStyleBackColor = false;
@@ -189,7 +189,7 @@
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(136, 462);
+            this.btnExit.Location = new System.Drawing.Point(13, 462);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(103, 35);
@@ -202,7 +202,7 @@
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(13, 462);
+            this.btnClear.Location = new System.Drawing.Point(13, 419);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(103, 35);
@@ -216,7 +216,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label6.Font = new System.Drawing.Font("Sitka Heading", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(317, 9);
+            this.label6.Location = new System.Drawing.Point(313, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(238, 39);
             this.label6.TabIndex = 42;
@@ -226,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 499);
+            this.ClientSize = new System.Drawing.Size(1026, 499);
             this.ControlBox = false;
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnClear);
