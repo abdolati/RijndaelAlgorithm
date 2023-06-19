@@ -87,13 +87,8 @@ namespace RijndaelAlgorithm
                 File.WriteAllBytes(fileName, encryptedFileData);
                 TxtPathfilEncrypt.Text = fileName;
             }
-
-            //TimeSpan stopTime = DateTime.Now.Subtract(start);
-            //elapsedTime += stopTime;
-           
-
-            TxtEncryptTime.Text =$" {stopwatch.Elapsed.TotalSeconds}";
-                //elapsedTime.ToString();          
+         
+            TxtEncryptTime.Text =$" {stopwatch.Elapsed.TotalSeconds}";        
         }
 
         private void btndecrypt_Click(object sender, EventArgs e)
