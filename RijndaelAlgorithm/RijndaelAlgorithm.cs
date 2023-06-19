@@ -93,17 +93,13 @@ namespace RijndaelAlgorithm
 
         private void btndecrypt_Click(object sender, EventArgs e)
         {
-            //TimeSpan elapsedTime = TimeSpan.Zero;
-            //DateTime start = DateTime.Now;
-
-
+       
             if (encryptedFileData == null || encryptionKey == null || encryptionIV == null)
             {
                 MessageBox.Show("Please encrypt a file first.");
                 return;
             }
-
-          
+         
             RijndaelManaged rijndael = new RijndaelManaged();
             rijndael.Key = encryptionKey;
             rijndael.IV = encryptionIV;
